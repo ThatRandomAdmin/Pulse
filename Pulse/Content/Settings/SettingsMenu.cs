@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pulse.Content.Home
+namespace Pulse.Content.Settings
 {
-    public partial class HomeMenu : UserControl
+    public partial class SettingsMenu : UserControl
     {
-        public HomeMenu()
+        public SettingsMenu()
         {
             InitializeComponent();
         }
 
-        private void HomeMenu_Load(object sender, EventArgs e)
+        private void SettingsMenu_Load(object sender, EventArgs e)
         {
             this.Dock = DockStyle.Fill;
         }

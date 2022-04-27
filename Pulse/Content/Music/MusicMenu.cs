@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pulse.Content.Home
+namespace Pulse.Content.Music
 {
-    public partial class HomeMenu : UserControl
+    public partial class MusicMenu : UserControl
     {
-        public HomeMenu()
+        public MusicMenu()
         {
             InitializeComponent();
         }
 
-        private void HomeMenu_Load(object sender, EventArgs e)
+        private void MusicMenu_Load(object sender, EventArgs e)
         {
             this.Dock = DockStyle.Fill;
         }

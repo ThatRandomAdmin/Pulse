@@ -53,11 +53,29 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Content\Apps\AppsMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Apps\AppsMenu.Designer.cs">
+      <DependentUpon>AppsMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Content\Home\HomeMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Content\Home\HomeMenu.Designer.cs">
       <DependentUpon>HomeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Music\MusicMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Music\MusicMenu.Designer.cs">
+      <DependentUpon>MusicMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Settings\SettingsMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Settings\SettingsMenu.Designer.cs">
+      <DependentUpon>SettingsMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -67,6 +85,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Content\Apps\AppsMenu.resx">
+      <DependentUpon>AppsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Home\HomeMenu.resx">
+      <DependentUpon>HomeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Music\MusicMenu.resx">
+      <DependentUpon>MusicMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Settings\SettingsMenu.resx">
+      <DependentUpon>SettingsMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

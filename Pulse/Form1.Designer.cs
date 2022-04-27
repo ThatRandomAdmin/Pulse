@@ -82,6 +82,7 @@ namespace Pulse
             this.SettingsBtn.Text = "   Settings";
             this.SettingsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SettingsBtn.UseVisualStyleBackColor = false;
+            this.SettingsBtn.Click += new System.EventHandler(this.SettingsBtn_Click);
             // 
             // AppsBtn
             // 
@@ -103,6 +104,7 @@ namespace Pulse
             this.AppsBtn.Text = "   Apps";
             this.AppsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AppsBtn.UseVisualStyleBackColor = false;
+            this.AppsBtn.Click += new System.EventHandler(this.AppsBtn_Click);
             // 
             // MusicBtn
             // 
@@ -124,6 +126,7 @@ namespace Pulse
             this.MusicBtn.Text = "   Music";
             this.MusicBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.MusicBtn.UseVisualStyleBackColor = false;
+            this.MusicBtn.Click += new System.EventHandler(this.MusicBtn_Click);
             // 
             // HomeBtn
             // 

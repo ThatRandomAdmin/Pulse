@@ -1,7 +1,7 @@
 ﻿
-namespace Pulse.Content.Home
+namespace Pulse.Content.Settings
 {
-    partial class HomeMenu
+    partial class SettingsMenu
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,14 +31,14 @@ namespace Pulse.Content.Home
         {
             this.SuspendLayout();
             // 
-            // HomeMenu
+            // SettingsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(21)))), ((int)(((byte)(160)))));
-            this.Name = "HomeMenu";
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(21)))), ((int)(((byte)(190)))));
+            this.Name = "SettingsMenu";
             this.Size = new System.Drawing.Size(760, 570);
-            this.Load += new System.EventHandler(this.HomeMenu_Load);
+            this.Load += new System.EventHandler(this.SettingsMenu_Load);
             this.ResumeLayout(false);
 
         }
