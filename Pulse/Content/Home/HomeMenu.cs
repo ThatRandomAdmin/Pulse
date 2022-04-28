@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace Pulse.Content.Home
 {
     public partial class HomeMenu : UserControl
     {
+
         public HomeMenu()
         {
             InitializeComponent();

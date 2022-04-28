@@ -192,6 +192,7 @@ namespace Pulse
             // 
             // HeaderPanel
             // 
+            this.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
             this.HeaderPanel.Controls.Add(this.MinimizeBtn);
             this.HeaderPanel.Controls.Add(this.MaximizeBtn);
             this.HeaderPanel.Controls.Add(this.QuitBtn);
@@ -205,7 +206,7 @@ namespace Pulse
             // 
             // MinimizeBtn
             // 
-            this.MinimizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
+            this.MinimizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
             this.MinimizeBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.MinimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MinimizeBtn.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
@@ -223,7 +224,7 @@ namespace Pulse
             // 
             // MaximizeBtn
             // 
-            this.MaximizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
+            this.MaximizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
             this.MaximizeBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.MaximizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MaximizeBtn.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;

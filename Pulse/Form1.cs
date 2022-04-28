@@ -20,7 +20,7 @@ namespace Pulse
         {
             InitializeComponent();
             this.Padding = new Padding(borderSize);//Border size
-            this.BackColor = Color.FromArgb(55, 21, 110);//Border color
+            this.BackColor = Color.FromArgb(0, 0, 0);//Border color
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -29,13 +29,14 @@ namespace Pulse.Content.Home
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.SuspendLayout();
             // 
             // HomeMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(21)))), ((int)(((byte)(160)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
             this.Name = "HomeMenu";
             this.Size = new System.Drawing.Size(760, 570);
             this.Load += new System.EventHandler(this.HomeMenu_Load);
@@ -44,5 +45,6 @@ namespace Pulse.Content.Home
         }
 
         #endregion
+        public System.Windows.Forms.Timer timer1;
     }
 }
