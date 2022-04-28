@@ -1,0 +1,136 @@
+{
+  "status": "ok",
+  "totalResults": 10,
+  "articles": [
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Sirens ring out in Israel to honour Holocaust victims",
+      "description": "Streets came to a standstill as people paused to pay tribute to the millions killed in the Holocaust.",
+      "url": "http://www.bbc.co.uk/news/world-middle-east-61255423",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/DB1D/production/_124339065_p0c3ql4s.jpg",
+      "publishedAt": "2022-04-28T10:37:19.7927912Z",
+      "content": "Sirens have sounded out across Israel to pay tribute to the millions killed during the Holocaust.\r\nStreets came to a standstill as pedestrians and drivers paused to mark the memorial day, which is heâ€¦ [+189 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "South Korea: Two arrested for leaking military secrets",
+      "description": "A businessman and an officer are charged with leaking secrets to a presumed agent from the North.",
+      "url": "http://www.bbc.co.uk/news/world-asia-61255779",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1356E/production/_124341297_gettyimages-1238547463.jpg",
+      "publishedAt": "2022-04-28T10:07:22.6079263Z",
+      "content": "By Zubaidah Abdul Jalil &amp; Frances MaoBBC News\r\nImage source, Getty Images\r\nImage caption, An active South Korean army officer was recruited as part of the alleged spy operation\r\nPolice in South Kâ€¦ [+680 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "War in Ukraine: Ukrainians deported to Russia beaten and mistreated",
+      "description": "One man says he was captured and taken over the border, where he was blindfolded and beaten.",
+      "url": "http://www.bbc.co.uk/news/world-europe-61248436",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/2B67/production/_124311111_promo-vlodimir.jpg",
+      "publishedAt": "2022-04-28T05:37:23.4176736Z",
+      "content": "By Yogita LimayeBBC News, Kyiv, Ukraine\r\nImage caption, Volodymyr Khropun says he was captured by Russian forces and deported to Russia\r\nThree weeks since his release, Volodymyr Khropun still looks vâ€¦ [+6352 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Olivia Wilde: Actress given custody papers on stage",
+      "description": "Wilde was given a letter marked \"private and confidential\" on stage during a conference.",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-61253002",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/11673/production/_124338217_gettyimages-1240266113.jpg",
+      "publishedAt": "2022-04-28T04:37:21.0584883Z",
+      "content": "Image source, AFP via Getty Images\r\nImage caption, \"This is for me?\" Wilde asked\r\nActor and director Olivia Wilde was seemingly unruffled after being handed child custody documents while appearing onâ€¦ [+1951 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Heatwave in India leaves millions struggling to cope",
+      "description": "Experts say India is now recording more intense, frequent heatwaves that are also longer in duration.",
+      "url": "http://www.bbc.co.uk/news/world-asia-india-61242341",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/00B7/production/_124338100_kolkatagirl.jpg",
+      "publishedAt": "2022-04-28T04:22:25.2770784Z",
+      "content": "By Sharanya HrishikeshBBC News, Delhi\r\nImage source, Getty Images\r\nImage caption, Summer began early this year in India\r\nMillions of Indians are experiencing a brutal heatwave that is throwing lives â€¦ [+5457 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Ukraine updates: Russia using gas and trade as a weapon - Zelensky",
+      "description": "The Ukrainian president's comments came after Russia cut gas supplies to Poland and Bulgaria.",
+      "url": "http://www.bbc.co.uk/news/live/world-europe-61252785",
+      "urlToImage": "https://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/5.2.0/bbc_news_logo.png",
+      "publishedAt": "2022-04-28T04:22:23.5431348Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Minneapolis police 'engaged in pattern of racism'",
+      "description": "Officers used force, stop and arrest minorities more often than white residents, an inquiry finds.",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-61253151",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/14AA2/production/_124324648_gettyimages-1216619856.jpg",
+      "publishedAt": "2022-04-28T03:07:20.495622Z",
+      "content": "Image source, Getty Images\r\nPolice in the US city of Minneapolis have engaged in a pattern of race discrimination for at least the past decade, a state inquiry has found. \r\nThe investigation was launâ€¦ [+2681 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "US astronaut makes space station history",
+      "description": "Astronaut Jessica Watkins becomes the first black woman to serve on an ISS crew after SpaceX launch.",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-61156746",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/F835/production/_124314536_p0c3m6qy.jpg",
+      "publishedAt": "2022-04-28T00:37:17.2932402Z",
+      "content": "Elon Musk's rocket company, SpaceX, launched four more astronauts into orbit on the Crew Dragon capsule on Wednesday morning. \r\nThe crew includes Jessica Watkins, who becomes the first black woman toâ€¦ [+532 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Boeing: Plane-maker reveals losses from Trump Air Force One deal",
+      "description": "The US plane-maker reveals costs from the deal former US President Donald Trump renegotiated.",
+      "url": "http://www.bbc.co.uk/news/business-61250667",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/2D0B/production/_124313511_tv065162772.jpg",
+      "publishedAt": "2022-04-27T17:52:18.5118802Z",
+      "content": "Former US President Donald Trump's new deal for Air Force One was a bad one for Boeing, the plane-maker's chief executive has said.\r\nDave Calhoun spoke as the firm said it expected to lose $1.1bn (Â£8â€¦ [+1972 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Trevor Reed: US marine released in prisoner swap with Russia",
+      "description": "Held in a Russian prison since 2019, Trevor Reed is safely on his way back to the US.",
+      "url": "http://www.bbc.co.uk/news/world-us-canada-61156745",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/9074/production/_124308963_gettyimages-1234294800.jpg",
+      "publishedAt": "2022-04-27T12:37:23.9451336Z",
+      "content": "Image source, Getty Images\r\nImage caption, Trevor Reed's father Joey stands next to a sign calling for his son's release\r\nA former US marine held in a Russian jail since 2019 has been released in a pâ€¦ [+687 chars]"
+    }
+  ]
+}

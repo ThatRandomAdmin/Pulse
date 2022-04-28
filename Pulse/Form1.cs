@@ -20,11 +20,16 @@ namespace Pulse
         {
             InitializeComponent();
             this.Padding = new Padding(borderSize);//Border size
-            this.BackColor = Color.FromArgb(55, 21, 110);//Border color
+            this.BackColor = Color.FromArgb(0, 0, 0);//Border color
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Content.Home.HomeMenu x = new Content.Home.HomeMenu();
+            x.AutoScroll = false;
+            contentPanel.Controls.Clear();
+            contentPanel.Controls.Add(x);
+            x.Show();
         }
 
         //Event methods
@@ -189,7 +194,38 @@ namespace Pulse
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
+            Content.Home.HomeMenu x = new Content.Home.HomeMenu();
+            x.AutoScroll = false;
+            contentPanel.Controls.Clear();
+            contentPanel.Controls.Add(x);
+            x.Show();
+        }
 
+        private void MusicBtn_Click(object sender, EventArgs e)
+        {
+            Content.Music.MusicMenu x = new Content.Music.MusicMenu();
+            x.AutoScroll = false;
+            contentPanel.Controls.Clear();
+            contentPanel.Controls.Add(x);
+            x.Show();
+        }
+
+        private void AppsBtn_Click(object sender, EventArgs e)
+        {
+            Content.Apps.AppsMenu x = new Content.Apps.AppsMenu();
+            x.AutoScroll = false;
+            contentPanel.Controls.Clear();
+            contentPanel.Controls.Add(x);
+            x.Show();
+        }
+
+        private void SettingsBtn_Click(object sender, EventArgs e)
+        {
+            Content.Settings.SettingsMenu x = new Content.Settings.SettingsMenu();
+            x.AutoScroll = false;
+            contentPanel.Controls.Clear();
+            contentPanel.Controls.Add(x);
+            x.Show();
         }
     }
 }

@@ -12,13 +12,15 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\Pulse\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -27,7 +29,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\Pulse\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -36,10 +38,14 @@
     <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,11 +59,35 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Content\Apps\AppsMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Apps\AppsMenu.Designer.cs">
+      <DependentUpon>AppsMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Content\Home\HomeMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Content\Home\HomeMenu.Designer.cs">
       <DependentUpon>HomeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Home\newsBit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Home\newsBit.Designer.cs">
+      <DependentUpon>newsBit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Music\MusicMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Music\MusicMenu.Designer.cs">
+      <DependentUpon>MusicMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Settings\SettingsMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Settings\SettingsMenu.Designer.cs">
+      <DependentUpon>SettingsMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -67,6 +97,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Images\logos\pulse.psd" />
+    <None Include="secrets.cs.secrets" />
+    <Compile Include="secrets.cs" />
+    <EmbeddedResource Include="Content\Apps\AppsMenu.resx">
+      <DependentUpon>AppsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Home\HomeMenu.resx">
+      <DependentUpon>HomeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Home\newsBit.resx">
+      <DependentUpon>newsBit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Music\MusicMenu.resx">
+      <DependentUpon>MusicMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Settings\SettingsMenu.resx">
+      <DependentUpon>SettingsMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +127,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="news.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -92,6 +143,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\logos\pulse.ico" />
+    <Content Include="Images\logos\pulse.png" />
+    <Content Include="Images\Newsimg\error.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

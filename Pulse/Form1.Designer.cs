@@ -29,6 +29,7 @@ namespace Pulse
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.MenuPanel = new System.Windows.Forms.Panel();
             this.SettingsBtn = new FontAwesome.Sharp.IconButton();
             this.AppsBtn = new FontAwesome.Sharp.IconButton();
@@ -69,8 +70,9 @@ namespace Pulse
             this.SettingsBtn.FlatAppearance.BorderSize = 0;
             this.SettingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SettingsBtn.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsBtn.ForeColor = System.Drawing.Color.White;
             this.SettingsBtn.IconChar = FontAwesome.Sharp.IconChar.Cogs;
-            this.SettingsBtn.IconColor = System.Drawing.Color.Black;
+            this.SettingsBtn.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.SettingsBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.SettingsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SettingsBtn.Location = new System.Drawing.Point(0, 528);
@@ -82,6 +84,7 @@ namespace Pulse
             this.SettingsBtn.Text = "   Settings";
             this.SettingsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SettingsBtn.UseVisualStyleBackColor = false;
+            this.SettingsBtn.Click += new System.EventHandler(this.SettingsBtn_Click);
             // 
             // AppsBtn
             // 
@@ -90,8 +93,9 @@ namespace Pulse
             this.AppsBtn.FlatAppearance.BorderSize = 0;
             this.AppsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AppsBtn.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AppsBtn.ForeColor = System.Drawing.Color.White;
             this.AppsBtn.IconChar = FontAwesome.Sharp.IconChar.Laptop;
-            this.AppsBtn.IconColor = System.Drawing.Color.Black;
+            this.AppsBtn.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.AppsBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.AppsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AppsBtn.Location = new System.Drawing.Point(0, 245);
@@ -103,6 +107,7 @@ namespace Pulse
             this.AppsBtn.Text = "   Apps";
             this.AppsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AppsBtn.UseVisualStyleBackColor = false;
+            this.AppsBtn.Click += new System.EventHandler(this.AppsBtn_Click);
             // 
             // MusicBtn
             // 
@@ -111,8 +116,9 @@ namespace Pulse
             this.MusicBtn.FlatAppearance.BorderSize = 0;
             this.MusicBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MusicBtn.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MusicBtn.ForeColor = System.Drawing.Color.White;
             this.MusicBtn.IconChar = FontAwesome.Sharp.IconChar.Spotify;
-            this.MusicBtn.IconColor = System.Drawing.Color.Black;
+            this.MusicBtn.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.MusicBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MusicBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MusicBtn.Location = new System.Drawing.Point(0, 173);
@@ -124,6 +130,7 @@ namespace Pulse
             this.MusicBtn.Text = "   Music";
             this.MusicBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.MusicBtn.UseVisualStyleBackColor = false;
+            this.MusicBtn.Click += new System.EventHandler(this.MusicBtn_Click);
             // 
             // HomeBtn
             // 
@@ -132,8 +139,9 @@ namespace Pulse
             this.HomeBtn.FlatAppearance.BorderSize = 0;
             this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.HomeBtn.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.ForeColor = System.Drawing.Color.White;
             this.HomeBtn.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.HomeBtn.IconColor = System.Drawing.Color.Black;
+            this.HomeBtn.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.HomeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.HomeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.HomeBtn.Location = new System.Drawing.Point(0, 101);
@@ -162,6 +170,7 @@ namespace Pulse
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(10, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(10);
             this.label1.Name = "label1";
@@ -175,7 +184,7 @@ namespace Pulse
             this.MenuBtn.FlatAppearance.BorderSize = 0;
             this.MenuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MenuBtn.IconChar = FontAwesome.Sharp.IconChar.Bars;
-            this.MenuBtn.IconColor = System.Drawing.Color.Black;
+            this.MenuBtn.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.MenuBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MenuBtn.Location = new System.Drawing.Point(159, 14);
             this.MenuBtn.Name = "MenuBtn";
@@ -189,6 +198,7 @@ namespace Pulse
             // 
             // HeaderPanel
             // 
+            this.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
             this.HeaderPanel.Controls.Add(this.MinimizeBtn);
             this.HeaderPanel.Controls.Add(this.MaximizeBtn);
             this.HeaderPanel.Controls.Add(this.QuitBtn);
@@ -202,11 +212,11 @@ namespace Pulse
             // 
             // MinimizeBtn
             // 
-            this.MinimizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
+            this.MinimizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(3)))), ((int)(((byte)(173)))));
             this.MinimizeBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.MinimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MinimizeBtn.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.MinimizeBtn.IconColor = System.Drawing.Color.Black;
+            this.MinimizeBtn.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.MinimizeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MinimizeBtn.IconSize = 30;
             this.MinimizeBtn.Location = new System.Drawing.Point(610, 0);
@@ -220,11 +230,11 @@ namespace Pulse
             // 
             // MaximizeBtn
             // 
-            this.MaximizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
+            this.MaximizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(3)))), ((int)(((byte)(173)))));
             this.MaximizeBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.MaximizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MaximizeBtn.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
-            this.MaximizeBtn.IconColor = System.Drawing.Color.Black;
+            this.MaximizeBtn.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.MaximizeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MaximizeBtn.IconSize = 30;
             this.MaximizeBtn.Location = new System.Drawing.Point(660, 0);
@@ -242,7 +252,7 @@ namespace Pulse
             this.QuitBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.QuitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.QuitBtn.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
-            this.QuitBtn.IconColor = System.Drawing.Color.Black;
+            this.QuitBtn.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.QuitBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.QuitBtn.IconSize = 30;
             this.QuitBtn.Location = new System.Drawing.Point(710, 0);
@@ -272,6 +282,7 @@ namespace Pulse
             this.Controls.Add(this.contentPanel);
             this.Controls.Add(this.HeaderPanel);
             this.Controls.Add(this.MenuPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1000, 600);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
