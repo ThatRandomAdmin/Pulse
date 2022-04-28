@@ -29,6 +29,7 @@ namespace Pulse
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.MenuPanel = new System.Windows.Forms.Panel();
             this.SettingsBtn = new FontAwesome.Sharp.IconButton();
             this.AppsBtn = new FontAwesome.Sharp.IconButton();
@@ -281,6 +282,7 @@ namespace Pulse
             this.Controls.Add(this.contentPanel);
             this.Controls.Add(this.HeaderPanel);
             this.Controls.Add(this.MenuPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1000, 600);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

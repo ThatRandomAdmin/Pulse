@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Images\logos\pulse.psd" />
     <None Include="secrets.cs.secrets" />
     <Compile Include="secrets.cs" />
     <EmbeddedResource Include="Content\Apps\AppsMenu.resx">
@@ -145,6 +146,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Images\logos\pulse.ico" />
+    <Content Include="Images\logos\pulse.png" />
     <Content Include="Images\Newsimg\error.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
