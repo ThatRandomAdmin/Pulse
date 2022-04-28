@@ -29,16 +29,22 @@ namespace Pulse.Content.Home
         private void newsBit_Load(object sender, EventArgs e)
         {
             label1.Text = title;
-            try
-            {
-                WebRequest req = WebRequest.Create(imgurl);
-                WebResponse res = req.GetResponse();
-                Stream imgStream = res.GetResponseStream();
-                Image img1 = Image.FromStream(imgStream);
-                imgStream.Close();
-                button1.BackgroundImage = img1;
+            if (imgurl != null){
+                try
+                {
+                    WebRequest req = WebRequest.Create(imgurl);
+                    WebResponse res = req.GetResponse();
+                    Stream imgStream = res.GetResponseStream();
+                    Image img1 = Image.FromStream(imgStream);
+                    imgStream.Close();
+                    button1.BackgroundImage = img1;
+                }
+                catch
+                {
+                    button1.BackgroundImage = Image.FromFile(@"..\Pulse\Images\Newsimg\error.jpg");
+                }
             }
-            catch
+            else
             {
                 button1.BackgroundImage = Image.FromFile(@"..\Pulse\Images\Newsimg\error.jpg");
             }

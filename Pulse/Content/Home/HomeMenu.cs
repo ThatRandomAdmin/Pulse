@@ -78,8 +78,13 @@ namespace Pulse.Content.Home
             //Download the data
             string json = new WebClient().DownloadString(url);
 
+            //Getting a weird bug where â€™ is displayed instead of ' and œ appears sometimes
+            //Probably an error with how I am formatting my json, but this will work for now
+            string jsonCorrected = json.Replace("â€™", "'");
+            string jsonCorrected2 = jsonCorrected.Replace("œ", "");
+
             //Prettify the data received
-            string jsonFormatted = JValue.Parse(json).ToString(Formatting.Indented);
+            string jsonFormatted = JValue.Parse(jsonCorrected2).ToString(Formatting.Indented);
             //Write data to Json file
             System.IO.File.WriteAllText(@"..\Pulse\news.json", jsonFormatted);
         }

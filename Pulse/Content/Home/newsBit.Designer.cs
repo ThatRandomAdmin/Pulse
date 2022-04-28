@@ -68,6 +68,7 @@ namespace Pulse.Content.Home
             this.BackColor = System.Drawing.Color.BlueViolet;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.Name = "newsBit";
             this.Size = new System.Drawing.Size(220, 215);
             this.Load += new System.EventHandler(this.newsBit_Load);

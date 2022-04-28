@@ -282,6 +282,7 @@ namespace Pulse
             this.Controls.Add(this.contentPanel);
             this.Controls.Add(this.HeaderPanel);
             this.Controls.Add(this.MenuPanel);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1000, 600);
             this.Name = "Form1";
