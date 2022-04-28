@@ -53,6 +53,7 @@ namespace Pulse.Content.Home
         {
             //Fill the parent
             this.Dock = DockStyle.Fill;
+
             try
             {
                 //Get top BBC news from News API
@@ -71,7 +72,7 @@ namespace Pulse.Content.Home
         {
             //News API Link
             var url = "https://newsapi.org/v2/top-headlines?" +
-                      "sources=bbc-news&" +
+                      "country=gb&" +
                       "apiKey="+ secret.NewsAPIkey;
 
             //Download the data
@@ -87,37 +88,24 @@ namespace Pulse.Content.Home
             JSONResponse response = JsonConvert.DeserializeObject<JSONResponse>(File.ReadAllText(@"..\Pulse\news.json"));
             foreach(var x in response.articles)
             {
-                //Create btn
-                Button btn = new Button();
+                flowLayoutPanel1.Controls.Add(new newsBit(x.title, x.url, x.urlToImage));
+            }
+        }
 
-                //Btn style
-                btn.Size = new Size(230, 230);
-                btn.FlatStyle = FlatStyle.Popup;
-                btn.BackgroundImageLayout = ImageLayout.Zoom;
-                btn.BackColor = Color.FromArgb(45, 21, 110);
-                //Try to create img for btn if there is internet connection
-                try
-                {
-                    string sURL = x.urlToImage;
-                    WebRequest req = WebRequest.Create(sURL);
-                    WebResponse res = req.GetResponse();
-                    Stream imgStream = res.GetResponseStream();
-                    Image img1 = Image.FromStream(imgStream);
-                    imgStream.Close();
-                    btn.BackgroundImage = img1;
-                }
-                catch
-                {
-                    btn.BackgroundImage = Image.FromFile(@"..\Pulse\Images\Newsimg\error.jpg");
-                }
-
-                //Btn text
-                btn.Text = x.title;
-                btn.TextAlign = ContentAlignment.BottomCenter;
-                btn.Font = new Font("Rockwell", 12f);
-                btn.ForeColor = Color.White;
-
-                flowLayoutPanel1.Controls.Add(btn);
+        private void refreshBtn_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            try
+            {
+                //Get top BBC news from News API
+                getNews();
+                //Create buttons for the news
+                genNews();
+            }
+            catch
+            {
+                //Create buttons for the last loaded news
+                genNews();
             }
         }
     }

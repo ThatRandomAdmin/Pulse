@@ -71,6 +71,12 @@
     <Compile Include="Content\Home\HomeMenu.Designer.cs">
       <DependentUpon>HomeMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Content\Home\newsBit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Home\newsBit.Designer.cs">
+      <DependentUpon>newsBit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Content\Music\MusicMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Content\Home\HomeMenu.resx">
       <DependentUpon>HomeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Home\newsBit.resx">
+      <DependentUpon>newsBit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Content\Music\MusicMenu.resx">
       <DependentUpon>MusicMenu.cs</DependentUpon>
