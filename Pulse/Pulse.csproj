@@ -98,8 +98,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Images\logos\pulse.psd" />
-    <None Include="secrets.cs.secrets" />
     <Compile Include="secrets.cs" />
+    <None Include="secrets.cs.secrets" />
     <EmbeddedResource Include="Content\Apps\AppsMenu.resx">
       <DependentUpon>AppsMenu.cs</DependentUpon>
     </EmbeddedResource>
