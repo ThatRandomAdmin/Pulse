@@ -4,7 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # Secret file
-  *secrets.cs
+secrets.cs
 
 # User-specific files
 *.rsuser
