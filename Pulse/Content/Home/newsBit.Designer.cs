@@ -38,7 +38,7 @@ namespace Pulse.Content.Home
             this.button1.AutoSize = true;
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(3)))), ((int)(((byte)(173)))));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
@@ -46,7 +46,7 @@ namespace Pulse.Content.Home
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 108);
+            this.button1.Size = new System.Drawing.Size(358, 186);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -54,9 +54,10 @@ namespace Pulse.Content.Home
             // 
             this.label1.Font = new System.Drawing.Font("Rockwell", 10F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 108);
+            this.label1.Location = new System.Drawing.Point(361, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 107);
+            this.label1.Padding = new System.Windows.Forms.Padding(5);
+            this.label1.Size = new System.Drawing.Size(281, 186);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,12 +66,15 @@ namespace Pulse.Content.Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.BlueViolet;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "newsBit";
-            this.Size = new System.Drawing.Size(220, 215);
+            this.Size = new System.Drawing.Size(645, 186);
             this.Load += new System.EventHandler(this.newsBit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

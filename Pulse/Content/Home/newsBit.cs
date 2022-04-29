@@ -21,6 +21,7 @@ namespace Pulse.Content.Home
         public newsBit(string text, string url, string img)
         {
             InitializeComponent();
+            this.Dock = DockStyle.Top;
             title = text;
             urllink = url;
             imgurl = img;

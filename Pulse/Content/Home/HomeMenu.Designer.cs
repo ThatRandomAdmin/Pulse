@@ -69,11 +69,12 @@ namespace Pulse.Content.Home
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 108);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 111);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(15);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(760, 462);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(752, 456);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // refreshBtn

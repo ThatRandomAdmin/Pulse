@@ -270,6 +270,7 @@ namespace Pulse
             this.contentPanel.Location = new System.Drawing.Point(240, 30);
             this.contentPanel.Margin = new System.Windows.Forms.Padding(0);
             this.contentPanel.Name = "contentPanel";
+            this.contentPanel.Padding = new System.Windows.Forms.Padding(5);
             this.contentPanel.Size = new System.Drawing.Size(760, 570);
             this.contentPanel.TabIndex = 101;
             // 
